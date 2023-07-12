@@ -1,0 +1,31 @@
+1. C:\GDJ69\javastudy 디렉터리 만들고 이동하기
+   1) C:\GDJ69 디렉터리에서 "Git Bash Here"
+   2) $ mkdir javastudy
+   3) $ cd javastudy
+
+2. javastudy 디렉터리를 로컬레파지토리로 만들기
+   $ git init
+
+3. github에 javastudy 원격레파지토리 만들기
+   텅 빈 원격레파지토리로 만들기 위해서 README.md, .gitignore 파일을 만들지 않음
+   javastudy 원격레파지토리 주소 필요
+   (https://github.com/goodeeit/javastudy.git)
+
+4. javastudy 원격레파지토리를 origin으로 등록
+   $ git remote add origin https://github.com/goodeeit/javastudy.git 
+
+5. 로컬레파지토리에 README.md 파일 만들기
+   READMD.md란? 원격레파지토리에 대해서 소개하는 파일
+   $ touch README.md
+   $ echo '# javastudy' >> README.md
+
+6. 로컬레파지토리에 .gitignore 파일 만들기 
+   .gitignore란?
+    1) 깃헙에 안 올리는 파일/디렉터리 목록 작성
+    2) gitignore.io 사이트에서 개발 환경을 등록하면 자동 생성
+       (Windows, Java, Eclipse 등록, Maven 프로젝트 사용할 땐 Maven 추가 등록)
+
+7. push 하기
+   $ git add .
+   $ git commit -m '메시지'
+   $ git push origin main
